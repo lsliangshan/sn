@@ -1,13 +1,12 @@
 <template>
   <div class="article_index_container">
-    文章首页
+    <article-list></article-list>
   </div>
 </template>
 <style scoped>
   .article_index_container {
     width: 100%;
     height: 100%;
-    background-color: darkcyan;
   }
 </style>
 <script>
@@ -16,6 +15,8 @@ export default {
   data () {
     return {}
   },
-  components: {}
+  components: {
+    ArticleList: () => import('./list.vue').then(m => m.default)
+  }
 }
 </script>

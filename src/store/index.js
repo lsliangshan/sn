@@ -40,6 +40,7 @@ import * as mutations from './mutations'
 import * as getters from './getters'
 
 import Footer from './module/Footer.js'
+import Article from './module/Article.js'
 
 Vue.use(Vuex)
 
@@ -50,7 +51,8 @@ const store = new Vuex.Store({
   mutations: mutations.mutations,
   getters: getters.getters,
   modules: {
-    footer: Footer
+    footer: Footer,
+    article: Article
   },
   state: {
     author: '智愚',
